@@ -24,9 +24,6 @@ EditorBuildSettings:
     path: Assets/Left.unity
     guid: 81aafa619871f9647a8f0627f7185ff9
   - enabled: 1
-    path: Assets/FirstGame.unity
-    guid: 56dfeb4fc5ff19541bc3b0e68e42ed29
-  - enabled: 1
     path: Assets/NextFIRSTGame.unity
     guid: a266855d03b9b6e429654f1a4a68aaa0
   m_configObjects: {}
