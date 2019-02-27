@@ -26,4 +26,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/NextFIRSTGame.unity
     guid: a266855d03b9b6e429654f1a4a68aaa0
+  - enabled: 1
+    path: Assets/Writting.unity
+    guid: ca3b3e87c13db5e4290d7e6a2b55616d
   m_configObjects: {}
