@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class Events : MonoBehaviour
+public class EventsRight : MonoBehaviour
 {
 	private WritingHandler writingHandler;
 	public Animator winDialog;
@@ -43,7 +43,7 @@ public class Events : MonoBehaviour
 			return;
         }
 		WritingHandler.currentNumberIndex = int.Parse (ob.name.Split ('-') [1]);
-		Application.LoadLevel ("Left");
+		Application.LoadLevel ("Right");
 
 	}
 	
@@ -77,6 +77,6 @@ public class Events : MonoBehaviour
 	//Load numbers menu
 	public void LoadNumbersMenu (Object ob)
 	{
-		Application.LoadLevel ("numbersMenu");
+		Application.LoadLevel ("numbersMenuRight");
 	}
 }
