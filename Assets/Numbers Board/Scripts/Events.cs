@@ -77,6 +77,6 @@ public class Events : MonoBehaviour
 	//Load numbers menu
 	public void LoadNumbersMenu (Object ob)
 	{
-		Application.LoadLevel ("numbersMenu");
+		Application.LoadLevel ("NumbersMenu");
 	}
 }

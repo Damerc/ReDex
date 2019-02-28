@@ -123,8 +123,8 @@ GameObject:
   - component: {fileID: 42399307}
   - component: {fileID: 42399311}
   - component: {fileID: 42399310}
-  - component: {fileID: 42399309}
   - component: {fileID: 42399308}
+  - component: {fileID: 42399309}
   m_Layer: 0
   m_Name: n-0
   m_TagString: UIButton
@@ -173,7 +173,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 42399306}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c24834e0c201c4c6d89168d709c78864, type: 3}
+  m_Script: {fileID: 11500000, guid: e293354d9798bd440aea0efdef388f9c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   isBegan: 0
@@ -182,10 +182,10 @@ MonoBehaviour:
   normalIcon: {fileID: 21300000, guid: 763c8ff3174a45b4fb774b82061aab8b, type: 3}
   hoverIcon: {fileID: 21300000, guid: 35b150d35c69f58449c724a2cc8d6278, type: 3}
   clickReleaseSFx: {fileID: 0}
-  message: LoadNumber
-  resetIconOnRelease: 0
+  message: titties
+  resetIconOnRelease: 1
   spriteRendererComp: {fileID: 42399311}
-  messageObject: {fileID: 42399306}
+  messageObject: {fileID: 2800000, guid: 8a12dcdfe5ab98948b18efc934424e69, type: 3}
 --- !u!61 &42399310
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -270,7 +270,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: aa4e1f1aa4a6e4f0dad51a83e2589f11, type: 2}
       propertyPath: m_LocalPosition.y
-      value: -0.06
+      value: -0.007
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: aa4e1f1aa4a6e4f0dad51a83e2589f11, type: 2}
       propertyPath: m_LocalPosition.z
@@ -311,7 +311,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: aa4e1f1aa4a6e4f0dad51a83e2589f11, type: 2}
       propertyPath: m_LocalScale.y
-      value: 0.6592786
+      value: 0.66653067
       objectReference: {fileID: 0}
     - target: {fileID: 6100000, guid: aa4e1f1aa4a6e4f0dad51a83e2589f11, type: 2}
       propertyPath: m_Offset.x
@@ -380,6 +380,7 @@ GameObject:
   - component: {fileID: 317569971}
   - component: {fileID: 317569970}
   - component: {fileID: 317569969}
+  - component: {fileID: 317569973}
   m_Layer: 0
   m_Name: n-1
   m_TagString: UIButton
@@ -426,7 +427,7 @@ MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 317569967}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c24834e0c201c4c6d89168d709c78864, type: 3}
   m_Name: 
@@ -512,6 +513,27 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &317569973
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 317569967}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e293354d9798bd440aea0efdef388f9c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isBegan: 0
+  type: 0
+  toggleStatus: 0
+  normalIcon: {fileID: 0}
+  hoverIcon: {fileID: 0}
+  clickReleaseSFx: {fileID: 0}
+  message: 
+  resetIconOnRelease: 1
+  spriteRendererComp: {fileID: 0}
+  messageObject: {fileID: 0}
 --- !u!1 &385942611
 GameObject:
   m_ObjectHideFlags: 0
@@ -1180,6 +1202,7 @@ GameObject:
   - component: {fileID: 1820160913}
   - component: {fileID: 1820160912}
   - component: {fileID: 1820160911}
+  - component: {fileID: 1820160915}
   m_Layer: 0
   m_Name: n-2
   m_TagString: UIButton
@@ -1226,7 +1249,7 @@ MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1820160909}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c24834e0c201c4c6d89168d709c78864, type: 3}
   m_Name: 
@@ -1312,6 +1335,27 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1820160915
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1820160909}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e293354d9798bd440aea0efdef388f9c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isBegan: 0
+  type: 0
+  toggleStatus: 0
+  normalIcon: {fileID: 0}
+  hoverIcon: {fileID: 0}
+  clickReleaseSFx: {fileID: 0}
+  message: 
+  resetIconOnRelease: 1
+  spriteRendererComp: {fileID: 0}
+  messageObject: {fileID: 0}
 --- !u!1 &1838895167
 GameObject:
   m_ObjectHideFlags: 0
@@ -1591,6 +1635,7 @@ GameObject:
   - component: {fileID: 1957799946}
   - component: {fileID: 1957799945}
   - component: {fileID: 1957799944}
+  - component: {fileID: 1957799948}
   m_Layer: 0
   m_Name: n-3
   m_TagString: UIButton
@@ -1637,7 +1682,7 @@ MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1957799942}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c24834e0c201c4c6d89168d709c78864, type: 3}
   m_Name: 
@@ -1723,6 +1768,27 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1957799948
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1957799942}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e293354d9798bd440aea0efdef388f9c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isBegan: 0
+  type: 0
+  toggleStatus: 0
+  normalIcon: {fileID: 0}
+  hoverIcon: {fileID: 0}
+  clickReleaseSFx: {fileID: 0}
+  message: 
+  resetIconOnRelease: 1
+  spriteRendererComp: {fileID: 0}
+  messageObject: {fileID: 0}
 --- !u!1 &2070485015
 GameObject:
   m_ObjectHideFlags: 0
