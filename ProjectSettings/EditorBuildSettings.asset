@@ -18,15 +18,18 @@ EditorBuildSettings:
     path: Assets/Numbers Board/Scenes/Maze.unity
     guid: aa11d3c792588e349ab10817a55cb083
   - enabled: 1
-    path: Assets/Right.unity
+    path: Assets/Numbers Board/Scenes/Right.unity
     guid: b6257c1bc494a5144aaed4617e817163
   - enabled: 1
-    path: Assets/Left.unity
+    path: Assets/Numbers Board/Scenes/Left.unity
     guid: 81aafa619871f9647a8f0627f7185ff9
-  - enabled: 1
-    path: Assets/NextFIRSTGame.unity
+  - enabled: 0
+    path: Assets/Numbers Board/Scenes/NextFIRSTGame.unity
     guid: a266855d03b9b6e429654f1a4a68aaa0
   - enabled: 1
-    path: Assets/Writting.unity
+    path: Assets/Numbers Board/Scenes/Writting.unity
     guid: ca3b3e87c13db5e4290d7e6a2b55616d
+  - enabled: 1
+    path: Assets/Numbers Board/Scenes/NumberMenuRight.unity
+    guid: cbbe4066945ac694db5561c9e0018d72
   m_configObjects: {}
