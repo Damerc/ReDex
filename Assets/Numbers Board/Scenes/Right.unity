@@ -2157,7 +2157,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!60 &315937094
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -4854,7 +4854,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!60 &917275289
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -5351,7 +5351,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 917275288}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.7, y: -0.2, z: 0}
+  m_LocalPosition: {x: 0.7, y: 0.07, z: 0}
   m_LocalScale: {x: 0.3855957, y: 0.3777264, z: 0.5467631}
   m_Children:
   - {fileID: 264278817}
@@ -10053,7 +10053,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2108177426}
   m_LocalRotation: {x: -0, y: -0, z: -0.017603356, w: 0.9998451}
-  m_LocalPosition: {x: -0.06, y: 0.35, z: 0}
+  m_LocalPosition: {x: -0.08, y: -0.08, z: 0}
   m_LocalScale: {x: 0.5358923, y: 0.5358923, z: 0.5358923}
   m_Children:
   - {fileID: 1595355090}
