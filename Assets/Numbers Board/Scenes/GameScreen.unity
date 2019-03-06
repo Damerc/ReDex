@@ -385,7 +385,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &627451701
 RectTransform:
   m_ObjectHideFlags: 0
@@ -645,6 +645,8 @@ GameObject:
   - component: {fileID: 806699437}
   - component: {fileID: 806699436}
   - component: {fileID: 806699435}
+  - component: {fileID: 806699439}
+  - component: {fileID: 806699438}
   m_Layer: 5
   m_Name: Maze
   m_TagString: Untagged
@@ -667,7 +669,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: 7, y: -79}
+  m_AnchoredPosition: {x: 10.900024, y: -84.79999}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &806699435
@@ -756,6 +758,40 @@ CanvasRenderer:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 806699433}
   m_CullTransparentMesh: 0
+--- !u!114 &806699438
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 806699433}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e293354d9798bd440aea0efdef388f9c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isBegan: 0
+  type: 0
+  toggleStatus: 0
+  normalIcon: {fileID: 0}
+  hoverIcon: {fileID: 0}
+  clickReleaseSFx: {fileID: 0}
+  message: 
+  resetIconOnRelease: 1
+  spriteRendererComp: {fileID: 0}
+  messageObject: {fileID: 0}
+--- !u!114 &806699439
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 806699433}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4c28c5ff2be79074281498b7421bc977, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  winDialog: {fileID: 0}
+  menu: {fileID: 647276803}
 --- !u!1 &832939254
 GameObject:
   m_ObjectHideFlags: 0
@@ -1027,6 +1063,7 @@ GameObject:
   - component: {fileID: 1098012718}
   - component: {fileID: 1098012717}
   - component: {fileID: 1098012716}
+  - component: {fileID: 1098012719}
   m_Layer: 5
   m_Name: NotMaze
   m_TagString: Untagged
@@ -1058,7 +1095,7 @@ MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1098012714}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 1392445389, guid: f70555f144d8491a825f0804e09c671c, type: 3}
   m_Name: 
@@ -1138,6 +1175,96 @@ CanvasRenderer:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1098012714}
   m_CullTransparentMesh: 0
+--- !u!114 &1098012719
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1098012714}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 41c4ab2b7c345ab4ebb4e89ae94098fc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isBegan: 0
+  type: 0
+  toggleStatus: 0
+  normalIcon: {fileID: 0}
+  hoverIcon: {fileID: 0}
+  clickReleaseSFx: {fileID: 0}
+  message: 
+  resetIconOnRelease: 1
+  spriteRendererComp: {fileID: 0}
+  messageObject: {fileID: 0}
+--- !u!1 &1147664506
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1147664507}
+  - component: {fileID: 1147664509}
+  - component: {fileID: 1147664508}
+  m_Layer: 5
+  m_Name: PuzzleBackground (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!224 &1147664507
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1147664506}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1555290015}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 5, y: 12}
+  m_SizeDelta: {x: 49, y: 127}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1147664508
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1147664506}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -765806418, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
+      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  m_Sprite: {fileID: 21300000, guid: 3197ae738014f6246b3e72ff75a0780e, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+--- !u!222 &1147664509
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1147664506}
+  m_CullTransparentMesh: 0
 --- !u!1 &1249246958
 GameObject:
   m_ObjectHideFlags: 0
@@ -1161,7 +1288,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1249246958}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -562.7, y: -320.49, z: 0}
+  m_LocalPosition: {x: -545.8, y: -310.7, z: 0}
   m_LocalScale: {x: 1.0036201, y: 1.0180537, z: 0.78936}
   m_Children: []
   m_Father: {fileID: 973748385}
@@ -1298,7 +1425,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1356445715}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -564.78, y: -320.49, z: 0}
+  m_LocalPosition: {x: -547.93, y: -311.1, z: 0}
   m_LocalScale: {x: 1.00362, y: 1.01805, z: 0.78936}
   m_Children: []
   m_Father: {fileID: 832939255}
@@ -1377,6 +1504,7 @@ RectTransform:
   m_Children:
   - {fileID: 130222777}
   - {fileID: 647276804}
+  - {fileID: 1147664507}
   m_Father: {fileID: 834798665}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -1523,7 +1651,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1822196015
 RectTransform:
   m_ObjectHideFlags: 0

@@ -1370,6 +1370,7 @@ GameObject:
   - component: {fileID: 1838895168}
   - component: {fileID: 1838895174}
   - component: {fileID: 1838895175}
+  - component: {fileID: 1838895173}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -1451,13 +1452,34 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1838895174
+--- !u!114 &1838895173
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1838895167}
   m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e293354d9798bd440aea0efdef388f9c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isBegan: 0
+  type: 0
+  toggleStatus: 0
+  normalIcon: {fileID: 21300000, guid: 6a09ee9d2fc7c044a8e8f30039fe5e04, type: 3}
+  hoverIcon: {fileID: 0}
+  clickReleaseSFx: {fileID: 0}
+  message: 
+  resetIconOnRelease: 1
+  spriteRendererComp: {fileID: 0}
+  messageObject: {fileID: 0}
+--- !u!114 &1838895174
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1838895167}
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 009a2860ac69a4942834baaa23b9edc5, type: 3}
   m_Name: 
@@ -1491,6 +1513,7 @@ GameObject:
   - component: {fileID: 1948757579}
   - component: {fileID: 1948757578}
   - component: {fileID: 1948757577}
+  - component: {fileID: 1948757581}
   m_Layer: 0
   m_Name: n-8
   m_TagString: UIButton
@@ -1537,7 +1560,7 @@ MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1948757575}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c24834e0c201c4c6d89168d709c78864, type: 3}
   m_Name: 
@@ -1623,6 +1646,27 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1948757581
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1948757575}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e293354d9798bd440aea0efdef388f9c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isBegan: 0
+  type: 0
+  toggleStatus: 0
+  normalIcon: {fileID: 21300000, guid: 5720e45038cb220458eb0920c6697025, type: 3}
+  hoverIcon: {fileID: 21300000, guid: 03c85e4314841f74bb196adb7bb5b163, type: 3}
+  clickReleaseSFx: {fileID: 0}
+  message: 
+  resetIconOnRelease: 1
+  spriteRendererComp: {fileID: 0}
+  messageObject: {fileID: 0}
 --- !u!1 &1957799942
 GameObject:
   m_ObjectHideFlags: 0

@@ -4854,7 +4854,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!60 &917275289
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -9747,15 +9747,19 @@ Prefab:
         type: 3}
     - target: {fileID: 21200000, guid: 8f60843e976054708a3832e9cd983b43, type: 2}
       propertyPath: m_Color.r
-      value: 0.5568628
+      value: 0.03529412
       objectReference: {fileID: 0}
     - target: {fileID: 21200000, guid: 8f60843e976054708a3832e9cd983b43, type: 2}
       propertyPath: m_Color.g
-      value: 0.87165403
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 21200000, guid: 8f60843e976054708a3832e9cd983b43, type: 2}
       propertyPath: m_Color.b
-      value: 0.8862745
+      value: 0.8235294
+      objectReference: {fileID: 0}
+    - target: {fileID: 21200000, guid: 8f60843e976054708a3832e9cd983b43, type: 2}
+      propertyPath: m_Color.a
+      value: 0.60784316
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8f60843e976054708a3832e9cd983b43, type: 2}
