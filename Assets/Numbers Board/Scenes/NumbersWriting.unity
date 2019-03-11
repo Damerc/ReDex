@@ -1464,6 +1464,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   winDialog: {fileID: 0}
   menu: {fileID: 0}
+  ContentScene: Writting
+  MenuScene: 
 --- !u!114 &1838895175
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1475,7 +1477,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 010f8a8e9a6704d61be54dd6636b5d75, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cam: {fileID: 0}
+  cam: {fileID: 1838895171}
   buttons: []
   eventOb: {fileID: 0}
   escapeEventName: 

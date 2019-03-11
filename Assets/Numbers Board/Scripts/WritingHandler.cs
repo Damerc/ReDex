@@ -4,6 +4,8 @@ using System.Collections.Generic;
 
 public class WritingHandler : MonoBehaviour
 {
+
+        public ParticleSystem confetti;
 		public TimerScript timer;
 		public GameObject penaltyPrefab;
 		public GameObject[] numbers;//the numbers/shapes list
@@ -258,6 +260,9 @@ public class WritingHandler : MonoBehaviour
 						numbers [currentNumberIndex].SetActive (false);
 						//winDialogNumberSprite.sprite = nSprites [currentNumberIndex];
 						winDialog.SetBool ("isFadingIn", true);
+                        confetti.gameObject.SetActive(true);
+            confetti.Play();
+           
 				}
 		}
 
@@ -365,14 +370,38 @@ public class WritingHandler : MonoBehaviour
 						numbers [currentNumberIndex].SetActive (false);
 						menu.SetActive (true);
 						winDialog.SetBool ("isFadingIn", false);
+            confetti.gameObject.SetActive(false);
+            confetti.Stop();
 
-						currentNumberIndex++;
+            currentNumberIndex++;
 						LoadNumber ();
 				}
 		}
 
-		//Load the previous number
-		public void LoadPreviousNumber ()
+    public void CloseWinDialog(Object ob)
+    {
+        numbers[WritingHandler.currentNumberIndex].SetActive(true);
+        menu.SetActive(true);
+        GameObject[] linesRenderes = GameObject.FindGameObjectsWithTag("LineRenderer");
+        foreach (GameObject line in linesRenderes)
+        {
+            line.GetComponent<LineRenderer>().enabled = true;
+        }
+
+        GameObject[] circlePoint = GameObject.FindGameObjectsWithTag("CirclePoint");
+        foreach (GameObject cp in circlePoint)
+        {
+            cp.GetComponent<MeshRenderer>().enabled = true;
+        }
+        winDialog.SetBool("isFadingIn", false);
+        confetti.gameObject.SetActive(false);
+        confetti.Stop();
+
+
+    }
+
+    //Load the previous number
+    public void LoadPreviousNumber ()
 		{
 				if (currentNumberIndex > 0 && currentNumberIndex < numbers.Length) {
 						numbers [currentNumberIndex].SetActive (false);

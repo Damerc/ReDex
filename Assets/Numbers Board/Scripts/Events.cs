@@ -1,13 +1,16 @@
 ﻿using UnityEngine;
 using System.Collections;
+using UnityEngine.SceneManagement;
 
 public class Events : MonoBehaviour
 {
 	private WritingHandler writingHandler;
 	public Animator winDialog;
 	public GameObject menu;
-	
-	void Start ()
+    public string ContentScene = "";
+    public string MenuScene = "";
+
+    void Start ()
 	{
 		//Setting up the writingHandler reference
 		GameObject numbers = HierrachyManager.FindActiveGameObjectWithName ("Numbers");
@@ -43,9 +46,10 @@ public class Events : MonoBehaviour
 			return;
         }
 		WritingHandler.currentNumberIndex = int.Parse (ob.name.Split ('-') [1]);
-		Application.LoadLevel ("Left");
+		//Application.LoadLevel ("Left");
+        SceneManager.LoadScene(ContentScene);
 
-	}
+    }
 	
 	//Erase the current Number
 	public void EraseNumber (Object ob)
@@ -77,6 +81,6 @@ public class Events : MonoBehaviour
 	//Load numbers menu
 	public void LoadNumbersMenu (Object ob)
 	{
-		Application.LoadLevel ("NumbersMenu");
+		SceneManager.LoadScene(MenuScene);
 	}
 }
