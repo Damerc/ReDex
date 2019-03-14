@@ -83,4 +83,10 @@ public class Events : MonoBehaviour
 	{
 		SceneManager.LoadScene(MenuScene);
 	}
+
+    //Load numbers menu
+    public void LoadLeftRight(Object ob)
+    {
+        SceneManager.LoadScene("GameScreen");
+    }
 }
