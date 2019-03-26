@@ -365,7 +365,7 @@ public class WritingHandler : MonoBehaviour
 
 				if (currentNumberIndex == numbers.Length - 1) {
 						currentNumberIndex = 0;
-						Application.LoadLevel ("NumbersMenu");
+						Application.LoadLevel ("WinScreen");
 				} else if (currentNumberIndex >= 0 && currentNumberIndex < numbers.Length - 1) {
 						numbers [currentNumberIndex].SetActive (false);
 						menu.SetActive (true);
